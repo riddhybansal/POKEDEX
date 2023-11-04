@@ -62,7 +62,10 @@ export class PokemonService {
     const evolutionData = data.evolutionData;
 
     return {
-      picture: pokeData.sprites.front_default,
+      frontPicture: pokeData.sprites.front_default,
+      backPicture: pokeData.sprites.back_default,
+      frontShinyPicture: pokeData.sprites.front_shiny,
+      backShinyPicture: pokeData.sprites.back_shiny,
       name: pokeData.name,
       abilities: pokeData.abilities.map(( ability: any ) => ability.ability.name),
       types: pokeData.types.map(( type: any ) => type.type.name),

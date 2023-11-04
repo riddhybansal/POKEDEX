@@ -2,7 +2,10 @@ import { PokeEvolution } from "./PokeEvolution";
 import { IPokeStat } from "./IPokeStats";
 
 export class Pokemon {
-    picture: string
+    frontPicture: string
+    frontShinyPicture:string
+    backShinyPicture:string
+    backPicture:string
     name: string
     abilities: string[]
     types: string[]
@@ -12,7 +15,10 @@ export class Pokemon {
     moves: string[]
 
     constructor() {
-        this.picture = "";
+        this.frontShinyPicture = "";
+        this.backShinyPicture = "";
+        this.frontPicture = "";
+        this.backPicture = "";
         this.name = "";
         this.abilities = [];
         this.types = [];

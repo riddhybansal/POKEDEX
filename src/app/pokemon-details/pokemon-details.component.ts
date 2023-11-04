@@ -15,6 +15,7 @@ export class PokemonDetailsComponent implements OnInit {
 
   pokemon$: Observable<Pokemon> = new Observable<Pokemon>();
   pokeData: Pokemon = new Pokemon();
+  defaultPicture=""
 
   constructor(private route: ActivatedRoute, public pokemonService: PokemonService) { }
 
