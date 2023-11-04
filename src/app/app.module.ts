@@ -9,6 +9,7 @@ import { PokemonListItemComponent } from './pokemon-list-item/pokemon-list-item.
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 import { HeaderComponent } from './header/header.component';
 import { StatBarComponent } from './shared/stat-bar/stat-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StatBarComponent } from './shared/stat-bar/stat-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+ FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
