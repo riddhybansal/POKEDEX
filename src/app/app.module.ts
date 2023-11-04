@@ -8,6 +8,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonListItemComponent } from './pokemon-list-item/pokemon-list-item.component';
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 import { HeaderComponent } from './header/header.component';
+import { StatBarComponent } from './shared/stat-bar/stat-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
     PokemonListComponent,
     PokemonListItemComponent,
     PokemonDetailsComponent,
-    HeaderComponent
+    HeaderComponent,
+    StatBarComponent
   ],
   imports: [
     BrowserModule,

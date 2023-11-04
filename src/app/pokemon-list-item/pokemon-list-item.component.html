@@ -1,7 +1,13 @@
-<li class="border d-flex flex-column align-items-center justify-content-around p-2">
+<li class="border d-flex flex-column align-items-center justify-content-around p-2 pokemon-card">
     <a routerLink="/{{ no }}">
         <img src="{{ this.spriteUrl }}">
     </a>    
     <p class="my-0 text-capitalize">{{ pokemon }}</p>
     <span class="font-weight-bold">#{{ no }}</span> 
 </li>
+<!-- <div class="card" style="width: 18rem;">
+    <img src="{{ this.spriteUrl }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ pokemon | titlecase}}</h5>
+    </div>
+  </div> -->
